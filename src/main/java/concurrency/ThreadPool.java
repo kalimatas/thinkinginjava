@@ -9,7 +9,7 @@ public class ThreadPool {
 //        ExecutorService es = Executors.newFixedThreadPool(5);
 //        ExecutorService es = Executors.newSingleThreadExecutor();
         for (int i = 0; i < 5; i++) {
-            es.execute(new LoopThread());
+            es.execute(new LiftOff());
         }
 
         es.shutdown();
